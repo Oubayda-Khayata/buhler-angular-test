@@ -1,0 +1,14 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+}
+
+.line {
+  width: 100px;
+  height: 5px;
+  background-color: #00b34a;
+}

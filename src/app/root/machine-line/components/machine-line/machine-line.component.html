@@ -1,0 +1,9 @@
+<div class="container">
+  <app-scale [hideMachineIcon]="hideMachineIcon" [initialStatus]="(scaleStatus$ | async) ?? Unknown"></app-scale>
+  <div *ngIf="showLines" class="line"></div>
+  <app-attacher [hideMachineIcon]="hideMachineIcon" [initialStatus]="(attacherStatus$ | async) ?? Unknown"></app-attacher>
+  <div *ngIf="showLines" class="line"></div>
+  <app-packer [hideMachineIcon]="hideMachineIcon" [initialStatus]="(packerStatus$ | async) ?? Unknown"></app-packer>
+  <div *ngIf="showLines" class="line"></div>
+  <app-closer [hideMachineIcon]="hideMachineIcon" [initialStatus]="(closerStatus$ | async) ?? Unknown"></app-closer>
+</div>
