@@ -12,7 +12,7 @@ const routes: Routes = [
   {
     path: '**',
     pathMatch: 'prefix',
-    redirectTo: '/error/notfound',
+    redirectTo: '/error/not-found',
   },
 ];
 
