@@ -1,0 +1,23 @@
+<mat-toolbar>
+    <mat-toolbar-row>
+      <img class="logo" src="assets/images/logo.png">
+      <span class="spacer"></span>
+      <div class="datetime-container">
+        <mat-icon>schedule</mat-icon>
+        <span class="datetime">{{ currentDate$ | async | date:'dd.MM.yyyy hh:mm a' }}</span>
+      </div>
+      <div>
+        <button mat-button [matMenuTriggerFor]="menu">
+          <mat-icon>account_circle</mat-icon>
+          <span class="m5 bold-500">{{ 'HEADER.PROFILE.BUTTON' | translate }}</span>
+        </button>
+        <mat-menu #menu="matMenu">
+          <button mat-menu-item>{{ 'HEADER.PROFILE.ITEMS.PROFILE' | translate }}</button>
+          <button mat-menu-item>{{ 'HEADER.PROFILE.ITEMS.LOGOUT' | translate }}</button>
+        </mat-menu>
+      </div>
+    </mat-toolbar-row>
+    <mat-toolbar-row>
+      <ng-content></ng-content>
+    </mat-toolbar-row>
+</mat-toolbar>

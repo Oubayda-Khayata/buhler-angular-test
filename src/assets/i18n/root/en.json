@@ -1,0 +1,11 @@
+{
+  "HEADER": {
+    "PROFILE": {
+      "BUTTON": "Operator",
+      "ITEMS": {
+        "PROFILE": "Profile",
+        "LOGOUT": "Logout"
+      }
+    }
+  }
+}
