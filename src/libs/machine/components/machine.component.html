@@ -1,0 +1,5 @@
+<div class="container" [style.background-color]="statusColor">
+  <mat-icon class="status-icon" [class.white-text]="status === Alarm || status === Warning">{{statusIcon}}</mat-icon>
+  <mat-icon *ngIf="!hideMachineIcon" class="machine-icon" [class.white-text]="status === Alarm || status === Warning">{{icon}}</mat-icon>
+  <div class="machine-name" [class.white-text]="status === Alarm || status === Warning">{{name}}</div>
+</div>
