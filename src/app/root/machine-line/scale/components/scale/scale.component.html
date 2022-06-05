@@ -1,0 +1,6 @@
+<app-machine
+  [icon]="icon"
+  [name]="name"
+  [status]="(status$ | async) ?? Unknown"
+  [hideMachineIcon]="hideMachineIcon"
+></app-machine>
