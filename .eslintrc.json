@@ -4,18 +4,13 @@
   "plugins": [
     "@typescript-eslint"
   ],
-  "extends": [
-    "plugin:@typescript-eslint/recommended",
-    "plugin:@typescript-eslint/recommended-requiring-type-checking",
-    "plugin:@typescript-eslint/strict"
-  ],
   "overrides": [
     {
       "files": [
         "*.ts"
       ],
       "extends": [
-        "plugin:@ngrx/strict-requiring-type-checking"
+        "plugin:@ngrx/recommended-requiring-type-checking"
       ]
     },
     {
@@ -23,7 +18,7 @@
         "*.ts"
       ],
       "extends": [
-        "plugin:ngrx/strict"
+        "plugin:ngrx/recommended"
       ]
     }
   ]
