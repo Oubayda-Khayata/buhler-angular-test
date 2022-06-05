@@ -1,0 +1,39 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  max-width: 300px;
+  min-width: 150px;
+  padding: 10px;
+}
+
+.status-icon {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  color: #00b34a;
+}
+
+.machine-icon {
+  width: 100px;
+  height: 80px;
+  margin-top: 10px;
+  font-size: 70px;
+  text-align: center;
+  color: #353535;
+}
+
+.machine-name {
+  font-size: x-large;
+  font-weight: 500;
+  color: #353535;
+}
+
+.white-text {
+  color: white !important;
+}
+
